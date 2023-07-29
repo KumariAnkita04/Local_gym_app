@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+
+</head>
+
+
+<style>
+    body{
+        color: rgb(6, 5, 5);
+        margin : 0px;
+        padding : 0px;
+        background: url(others/bg.jpg);
+        /* font-style: oblique; */
+        height: 1000px;
+        
+       
+       
+      
+    }
+    .left{
+        position:absolute;
+        left: 12px;
+        top:10px;
+       display: inline-block;
+       /* border: 2px solid white; */
+       /* border-color:green ; */
+       /* background-color: rgb(208, 37, 171); */
+    }
+    .left img{
+        width: 80px;
+        height: 35px;
+        /* padding-top: 5px; */
+    }
+    .left div{
+        text-align: center;
+        font-size: 21px;
+        margin: auto;
+       padding-bottom: 5px;
+       line-height: 19px;
+       
+    }
+    .mid{
+        color: black;
+        display:block;
+        width:30%;
+        padding-left: 15px;
+        margin: 10px auto;
+        
+        /* border: 2px solid yellow; */
+        /* border-color:green ; */
+        /* background-color: rgb(208, 37, 171); */
+    }
+    .right{
+        position:absolute;
+        right: 12px; 
+        top:10px;
+        display: inline-block;
+        /* border: 2px solid rgb(64, 148, 200); */
+        /* border-color:green ; */
+        /* background-color: rgb(208, 37, 171); */
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin: 0px 7px;
+        font-size: 13px;
+        padding:4px 15px;         /* vertical horizontal */
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(46, 77, 101);
+        text-decoration: underline;
+    }
+    
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 16px;
+    }
+    .navbar li a{
+        color: rgb(12, 11, 11);
+        text-decoration:none;
+        padding: 34px 12px; 
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: rgb(145, 33, 33);
+    }
+    .container{
+    color: rgb(190, 174, 174);
+    /* border: 2px solid white; */
+    margin: 100px 90px;
+    padding: 70px;
+    border-radius:20p;
+    width:33%;
+
+    }
+    .container h1{
+      text-align: center;
+      color: black;
+     
+    }
+    .form-group input{
+        color: rgb(10, 9, 9);
+    padding: 5px 0px;
+    margin: 10px 75px;
+    border: 2px solid rgb(117, 27, 27);
+    border-radius: 12px;
+    width: 68%;
+    text-align: center;
+    display: block;
+    font-size:20px;
+
+    }
+    .container button{
+        display: block;
+        width: 33%;
+        margin: auto;
+    }
+    
+
+    
+</style>
+<body>
+    <header>
+        <!-- left for logo -->
+       <div class="left">
+        <img src="others/logo.jpg" alt="">
+        <div>
+           Fitness
+        </div>
+       </div>
+       <!-- mid for navbar -->
+       <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+             <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+       </div>
+       <!-- right for bottons -->
+       <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email us</button>
+
+       </div>
+
+    </header>
+    <div class="container">
+        <h1>Don't wait for the perfect moment. Take the moment and make it perfect.Join the best gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+            <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+            <input type="text" name="" placeholder="Enter your contact no">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
